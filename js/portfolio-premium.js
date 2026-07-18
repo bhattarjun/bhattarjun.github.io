@@ -1,0 +1,23 @@
+(() => {
+  const $ = (selector, scope = document) => scope.querySelector(selector);
+  const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+  window.addEventListener('load', () => $('.loader').classList.add('hidden'));
+  $('#year').textContent = new Date().getFullYear();
+  const header = $('.site-header'), backTop = $('.back-top');
+  const updateScrollState = () => { const active = scrollY > 30; header.classList.toggle('scrolled', active); backTop.classList.toggle('visible', scrollY > 650); };
+  addEventListener('scroll', updateScrollState, { passive: true }); updateScrollState();
+  const toggle = $('.menu-toggle'), links = $('.nav-links');
+  toggle.addEventListener('click', () => { const open = links.classList.toggle('open'); toggle.setAttribute('aria-expanded', open); document.body.classList.toggle('menu-open', open); });
+  $$('.nav-links a').forEach(link => link.addEventListener('click', () => { links.classList.remove('open'); toggle.setAttribute('aria-expanded', false); document.body.classList.remove('menu-open'); }));
+  backTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+  const reveal = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); reveal.unobserve(entry.target); } }), { threshold: .12 });
+  $$('.reveal').forEach(element => reveal.observe(element));
+  const navLinks = $$('.nav-links a');
+  const sections = $$('main section[id]');
+  const navigation = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id)); }), { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(section => navigation.observe(section));
+  const metrics = $$('.metric strong'); let counted = false;
+  const counters = new IntersectionObserver(entries => { if (!entries.some(entry => entry.isIntersecting) || counted) return; counted = true; metrics.forEach(el => { const target = +el.dataset.count, start = performance.now(), duration = 1250; const tick = time => { const progress = Math.min((time - start) / duration, 1); el.textContent = Math.floor(target * (1 - Math.pow(1 - progress, 3))); if (progress < 1) requestAnimationFrame(tick); }; requestAnimationFrame(tick); }); counters.disconnect(); }, { threshold: .4 });
+  if ($('.metrics')) counters.observe($('.metrics'));
+  $$('.filters button').forEach(button => button.addEventListener('click', () => { $$('.filters button').forEach(item => item.classList.toggle('selected', item === button)); const filter = button.dataset.filter; $$('.project-card').forEach(card => card.classList.toggle('filtered', filter !== 'all' && card.dataset.category !== filter)); }));
+})();

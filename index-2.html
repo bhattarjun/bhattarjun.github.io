@@ -1,551 +1,103 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-  
-<!-- Mirrored from lmpixels.com/demo/leven-html-new/dark/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Oct 2021 14:36:27 GMT -->
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>Leven - Resume / CV / vCard Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Leven - Resume / CV / vCard Template" />
-    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
-    <meta name="author" content="lmpixels" />
-    <link rel="shortcut icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Arjun Bhatt is a Full Stack .NET Developer building scalable, responsive enterprise web applications.">
+  <meta name="theme-color" content="#0b1120">
+  <title>Arjun Bhatt | Full Stack .NET Developer</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/portfolio-premium.css">
+</head>
+<body>
+  <div class="loader" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
 
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Arjun Bhatt, home"><span>AB</span> Arjun Bhatt</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links"><i></i><i></i><i></i><span class="sr-only">Open menu</span></button>
+      <div class="nav-links" id="nav-links">
+        <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
 
-    <script src="js/modernizr.custom.js"></script>
-  </head>
-
-  <body class="page">
-
-    <div class="lm-animated-bg"></div>
-    
-    <!-- Loading animation -->
-    <div class="preloader">
-      <div class="preloader-animation">
-        <div class="preloader-spinner">
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-orb orb-one" aria-hidden="true"></div><div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Available for select opportunities</p>
+          <h1>Building digital products<br>that <em>scale.</em></h1>
+          <p class="hero-description">I'm <strong>Arjun Bhatt</strong>, a Full Stack .NET Developer. I build scalable enterprise web applications using ASP.NET Core, MVC, Angular and SQL Server.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects <span>→</span></a>
+            <a class="button ghost" href="Arjun_Bhatt.pdf" download>Download resume <span>↓</span></a>
+          </div>
+          <div class="hero-trust"><span>Trusted technologies</span><div><b>.NET</b><b>Angular</b><b>Azure</b><b>SQL</b></div></div>
+        </div>
+        <div class="code-scene reveal reveal-right" aria-label="Stylized illustration of a developer workspace">
+          <div class="scene-glow"></div>
+          <div class="window"><div class="window-bar"><span></span><span></span><span></span><small>arjun.dev / workspace</small></div><div class="editor"><aside><b>⌘</b><i></i><i></i><i></i><i></i></aside><div class="code"><p><span class="purple">public class</span> <span class="blue">Developer</span></p><p>{</p><p class="indent"><span class="purple">private readonly</span> <span class="blue">Passion</span> _passion;</p><p class="indent"><span class="purple">public</span> <span class="blue">Solution</span> <span class="orange">Build</span>()</p><p class="indent">{</p><p class="indent2"><span class="purple">return new</span> <span class="blue">Solution</span></p><p class="indent2">{ Scalable = <span class="green">true</span> };</p><p class="indent">}</p><p>}</p></div></div></div>
+          <div class="floating-card card-api"><span>⚡</span><div><small>System status</small><b>All systems live</b></div><i></i></div>
+          <div class="floating-card card-stack"><small>Current stack</small><div><b>C#</b><b>NG</b><b>SQL</b></div></div>
+          <div class="scene-dots" aria-hidden="true"></div>
         </div>
       </div>
-    </div>
-    <!-- /Loading animation -->
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+    </section>
 
-    <!-- Scroll To Top Button -->
-    <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
-    <!-- /Scroll To Top Button -->
-
-    <div class="page-scroll">
-      <div id="page_container" class="page-container bg-move-effect" data-animation="transition-flip-in-right">
-
-        
-        <!-- Header -->
-        <header id="site_header" class="header">
-          <div class="header-content clearfix">
-                
-            <!-- Text Logo -->
-            <div class="text-logo">
-              <a href="index.html">
-                <div class="logo-symbol">A</div>
-                <div class="logo-text">Arjun <span>Bhatt</span></div>
-              </a>
-            </div>
-            <!-- /Text Logo -->
-
-            <!-- Navigation -->
-            <div class="site-nav mobile-menu-hide">
-              <ul class="leven-classic-menu site-main-menu">
-                <li class="menu-item  current-menu-item">
-                  <a href="index.html">About Me</a>
-                  <!---<ul class="sub-menu" menu-item-has-children>
-                    <li class="menu-item current-menu-item">
-                      <a href="index.html">About Me 1</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="index-2.html">About Me 2</a>
-                    </li>
-                  </ul>--->
-                </li>
-
-                <li class="menu-item">
-                  <a href="resume.html">Resume</a>
-                </li>
-                <li class="menu-item">
-                  <a href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Mobile Menu Toggle -->
-            <a class="menu-toggle mobile-visible">
-              <i class="fa fa-bars"></i>
-            </a>
-            <!-- Mobile Menu Toggle -->
-          </div>
-        </header>
-        <!-- /Header -->
-
-        <div id="main" class="site-main">
-          <div id="main-content" class="single-page-content">
-            <div id="primary" class="content-area">    
-              <div id="content" class="page-content site-content single-post" role="main">
-
-
-                <div id="home_content" class="home-content third-style">
-                  <div class="start-page-full-width">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="inner-content">
-                          <div class="fill-block" style="background-image: url(img/main_photo.jpg);"></div>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="inner-content inner-text-block">
-                          <div class="hp-text-block">
-                            <div class="owl-carousel text-rotation">                                    
-                              <div class="item">
-                                <div class="sp-subtitle">Web Designer</div>
-                              </div>
-                              <div class="item">
-                                <div class="sp-subtitle">Frontend-developer</div>
-                              </div>
-                            </div>
-                          
-                            <h2 class="hp-main-title">Arjun Bhatt</h2>
-                            <p>Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien pretium eu.</p>
-
-                            <div class="hp-buttons">
-                              <a href="" target="_blank" class="btn btn-primary" download>Download CV</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-12 ">
-                    <div class="p-50"></div>
-
-                    <div class="block-title">
-                      <h2>What I Do</h2>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-6 ">
-                    <div class="info-list-w-icon">
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-pen"></i>
-                        </div>
-      
-                        <div class="ci-text">
-                          <h4>Copywrite</h4>
-                          <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
-                        </div>
-                      </div>
-    
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-display"></i>
-                        </div>
-     
-                        <div class="ci-text">
-                          <h4>Web Design</h4>
-                          <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class=" col-xs-12 col-sm-6 ">
-                    <div class="info-list-w-icon">
-
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-shop"></i>
-                        </div>
-
-                        <div class="ci-text">
-                          <h4>Ecommerce</h4>
-                          <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
-                        </div>
-                      </div>
-
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-megaphone"></i>
-                        </div>
-
-                        <div class="ci-text">
-                          <h4>Marketing</h4>
-                          <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-12">
-                    <div class="p-20"></div>
-
-                    <!-- Testimonials -->
-                    <div class="block-title">
-                      <h2>Testimonials</h2>
-                    </div>
-
-                    <div id="testimonials_1" class="testimonials owl-carousel" data-mobile-items="1" data-tablet-items="2" data-items="2">
-                      <!-- Testimonial 1 -->
-                      <div class="testimonial-item">
-                        <!-- Testimonial Content -->
-                        <div class="testimonial-content">
-                          <!-- Picture -->
-                          <div class="testimonial-picture">
-                            <img src="img/testimonials/testimonial-1.jpg" alt="Billy Adams"/>
-                          </div>              
-                          <!-- /Picture -->
-
-                          <!-- Testimonial Text -->
-                          <div class="testimonial-text">
-                             <p>Donec eu est vel metus consequat volutpat. Nunc aliquet euismod mauris, a feugiat urna ullamcorper non.</p>
-                          </div>
-                          <!-- /Testimonial Text -->
-
-                          <!-- Testimonial author information -->
-                          <div class="testimonial-author-info">
-                            <h5 class="testimonial-author">Billy Adams</h5>
-                            <p class="testimonial-firm">Rolling Thunder</p>
-                          </div>
-                          <!-- /Testimonial author information -->
-
-                          <div class="testimonial-icon">
-                            <i class="fa fa-quote-left"></i>
-                          </div>
-
-                           <div class="testimonial-icon-big">
-                            <i class="fa fa-quote-right"></i>
-                          </div>
-                        </div>
-                        <!-- /Testimonial Content -->
-                      </div>
-                      <!-- End of Testimonial 1 -->
-
-                      <!-- Testimonial 2 -->
-                      <div class="testimonial-item">
-                        <!-- Testimonial Content -->
-                        <div class="testimonial-content">
-                          <!-- Picture -->
-                          <div class="testimonial-picture">
-                            <img src="img/testimonials/testimonial-2.jpg" alt="Gary Johnson"/>
-                          </div>              
-                          <!-- /Picture -->
-
-                          <!-- Testimonial Text -->
-                          <div class="testimonial-text">
-                             <p>Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.</p>
-                          </div>
-                          <!-- /Testimonial Text -->
-
-                          <!-- Testimonial author information -->
-                          <div class="testimonial-author-info">
-                            <h5 class="testimonial-author">Gary Johnson</h5>
-                            <p class="testimonial-firm">Locost Accessories</p>
-                          </div>
-                          <!-- /Testimonial author information -->
-
-                          <div class="testimonial-icon">
-                            <i class="fa fa-quote-left"></i>
-                          </div>
-
-                           <div class="testimonial-icon-big">
-                            <i class="fa fa-quote-right"></i>
-                          </div>
-                        </div>
-                        <!-- /Testimonial Content -->
-                      </div>
-                      <!-- End of Testimonial 2 -->
-
-                      <!-- End of Testimonial 3 -->
-                      <div class="testimonial-item">
-
-                        <!-- Testimonial Content -->
-                        <div class="testimonial-content">
-                          <!-- Picture -->
-                          <div class="testimonial-picture">
-                            <img src="img/testimonials/testimonial-3.jpg" alt="Daniel Pringle"/>
-                          </div>              
-                          <!-- /Picture -->
-
-                          <!-- Testimonial Text -->
-                          <div class="testimonial-text">
-                            <p>Etiam pretium ipsum quis justo dictum accumsan. Phasellus egestas odio a velit scelerisque.</p>
-                          </div>
-                          <!-- /Testimonial Text -->
-
-                          <!-- Testimonial author information -->
-                          <div class="testimonial-author-info">
-                            <h5 class="testimonial-author">Daniel Pringle</h5>
-                            <p class="testimonial-firm">Sagebrush</p>
-                          </div>
-                          <!-- /Testimonial author information -->
-
-                          <div class="testimonial-icon">
-                            <i class="fa fa-quote-left"></i>
-                          </div>
-
-                          <div class="testimonial-icon-big">
-                            <i class="fa fa-quote-right"></i>
-                          </div>
-                        </div>
-                        <!-- /Testimonial Content -->
-
-                      </div>
-                      <!-- End of Testimonial 3 -->
-                    </div>
-                    <!-- /Testimonials -->
-
-                    <div class="p-40"></div>
-
-                    <!-- Clients Slider -->
-                    <div class="block-title">
-                      <h2>Clients</h2>
-                    </div>
-
-                    <div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3" data-items="6">
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="Golden Grid">
-                          <img src="img/clients/client-1.png" alt="Golden Grid">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="Sweety">
-                          <img src="img/clients/client-2.png" alt="Sweety">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="Magic Furnitures">
-                          <img src="img/clients/client-3.png" alt="Magic Furnitures">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="LifeGuard">
-                          <img src="img/clients/client-4.png" alt="LifeGuard">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="LESS">
-                          <img src="img/clients/client-5.png" alt="LESS">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="Design Lovers">
-                          <img src="img/clients/client-6.png" alt="Design Lovers">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="WordPress">
-                          <img src="img/clients/client-7.png" alt="WordPress">
-                        </a>
-                      </div>
-                    </div>
-                    <!-- /Clients Slider -->
-
-                    <div class="p-40"></div>
-
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-12">
-                    <div class="block-title">
-                      <h2>Fun Facts</h2>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-3">
-                    <div class="lm-info-block gray-default">
-                      <i class="linecons linecons-heart"></i>
-                      <h4>Happy Clients</h4>
-                      <span class="lm-info-block-value">578</span>
-                      <span class="lm-info-block-text"></span>
-                    </div>
-                  </div>
-
-                  <div class=" col-xs-12 col-sm-3">
-                    <div class="lm-info-block gray-default">
-                      <i class="linecons linecons-clock"></i>
-                      <h4>Working Hours</h4>
-                      <span class="lm-info-block-value">4,780</span>
-                      <span class="lm-info-block-text"></span>
-                    </div>
-                  </div>
-
-                  <div class=" col-xs-12 col-sm-3 ">
-                    <div class="lm-info-block gray-default">
-                      <i class="linecons linecons-star"></i>
-                      <h4>Awards Won</h4>
-                      <span class="lm-info-block-value">15</span>
-                      <span class="lm-info-block-text"></span>
-                    </div>
-                  </div>
-
-                  <div class=" col-xs-12 col-sm-3 ">
-                    <div class="lm-info-block gray-default">
-                      <i class="linecons linecons-cup"></i>
-                      <h4>Coffee Consumed</h4>
-                      <span class="lm-info-block-value">1,286</span>
-                      <span class="lm-info-block-text"></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="p-40"></div>
-
-                <!-- Pricing -->
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-12 ">
-                    <div class="block-title">
-                      <h2>Pricing</h2>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-12 ">
-                    <div class="fw-pricing clearfix row">
-                      
-                      <div class="fw-package-wrap col-md-4 ">
-                        <div class="fw-package">
-                          <div class="fw-heading-row">
-                            <span>Silver</span>
-                          </div>
-                          
-                          <div class="fw-pricing-row">
-                            <span>$64</span>
-                            <small>per month</small>
-                          </div>
-                          
-                          <div class="fw-button-row">
-                            <a href="#" target="_self" class="btn btn-secondary">Free Trial</a>
-                          </div>
-
-                          <div class="fw-default-row">Lorem ipsum dolor</div>
-                          <div class="fw-default-row">Pellentesque scelerisque</div>
-                          <div class="fw-default-row">Morbi eu sagittis</div>
-                        </div>
-                      </div>
-   
-                      <div class="fw-package-wrap col-md-4 highlight-col ">
-                        <div class="fw-package">
-                          <div class="fw-heading-row">
-                            <span>Gold</span>
-                          </div>
-                          
-                          <div class="fw-pricing-row">
-                            <span>$128</span>
-                            <small>per month</small>
-                          </div>
-
-                          <div class="fw-button-row">
-                            <a href="#" target="_self" class="btn btn-primary">Free Trial</a>
-                          </div>
-                          
-                          <div class="fw-default-row">Lorem ipsum dolor</div>
-                          <div class="fw-default-row">Pellentesque scelerisque</div>
-                          <div class="fw-default-row">Morbi eu sagittis</div>
-                          <div class="fw-default-row">Donec non diam</div>
-                          <div class="fw-default-row">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="fw-package-wrap col-md-4 default-col ">
-                      <div class="fw-package">
-                        <div class="fw-heading-row">
-                          <span>Platinum</span>
-                        </div>
-                        
-                        <div class="fw-pricing-row">
-                          <span>$256</span>
-                          <small>per month</small>
-                        </div>
-                        
-                        <div class="fw-button-row">
-                          <a href="#" target="_self" class="btn btn-primary">Free Trial</a>
-                        </div>
-                        
-                        <div class="fw-default-row">Lorem ipsum dolor</div>
-                        <div class="fw-default-row">Pellentesque scelerisque</div>
-                        <div class="fw-default-row">Morbi eu sagittis</div>
-                        <div class="fw-default-row">Donec non diam</div>
-                        <div class="fw-default-row">Aenean nec libero</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Pricing -->
-              </div>
-            </div>
+    <section class="section about" id="about">
+      <div class="container"><div class="section-heading reveal"><p class="eyebrow">01 / About me</p><h2>Engineering with<br><em>purpose.</em></h2></div>
+        <div class="about-grid"><div class="about-intro reveal"><p>Great software is more than clean code. It's a careful balance of strong architecture, thoughtful user experiences, and solutions that make work feel easier.</p><a class="text-link" href="#contact">Let's build something meaningful <span>→</span></a></div>
+          <div class="timeline">
+            <article class="timeline-item reveal"><span>01</span><div><h3>Experience</h3><p>Hands-on experience delivering robust web solutions for business workflows and enterprise needs.</p></div></article>
+            <article class="timeline-item reveal"><span>02</span><div><h3>Passion</h3><p>Turning complex requirements into intuitive, maintainable products that teams can trust.</p></div></article>
+            <article class="timeline-item reveal"><span>03</span><div><h3>What I build</h3><p>Secure APIs, data-driven dashboards, streamlined admin portals, and modern web platforms.</p></div></article>
           </div>
         </div>
-
-        <footer class="site-footer clearfix">
-          <div class="footer-social">
-            <ul class="footer-social-links">
-              <li>
-                <a href="#" target="_blank">Twitter</a>
-              </li>
-
-              <li>
-                <a href="#" target="_blank">Facebook</a>
-              </li>
-
-              <li>
-                <a href="#" target="_blank">Instagram</a>
-              </li>
-            </ul>
-          </div>
-              
-          <div class="footer-copyrights">
-            <p>© 2020 All rights reserved. LMPixels.</p>
-          </div>
-        </footer>
-        
       </div>
-    </div>
+    </section>
 
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src='../../../../www.google.com/recaptcha/api.js'></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src='js/jquery.shuffle.min.js'></script>
-    <script src='js/masonry.pkgd.min.js'></script>
-    <script src='js/owl.carousel.min.js'></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
-    <script src="js/jquery.googlemap.js"></script>
-    <script src="js/validator.js"></script>
-    <script src="js/main.js"></script>
-  <script defer src="../../../../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6a33ef77d8d46c4d","version":"2021.10.0","r":1,"token":"94b99c0576dc45bf9d669fb5e9256829","si":100}'></script>
+    <section class="section skills" id="skills"><div class="container"><div class="section-heading reveal"><p class="eyebrow">02 / Technical toolkit</p><h2>A stack built for<br><em>real-world scale.</em></h2></div>
+      <div class="skill-grid">
+        <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Backend</h3><p>Reliable services and clean architectures.</p><ul><li>ASP.NET Core</li><li>ASP.NET MVC</li><li>C#</li><li>REST API</li><li>Dapper</li><li>Entity Framework</li></ul></article>
+        <article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>Frontend</h3><p>Responsive interfaces made to feel effortless.</p><ul><li>Angular</li><li>JavaScript</li><li>TypeScript</li><li>HTML & CSS</li><li>Bootstrap</li></ul></article>
+        <article class="skill-card reveal"><div class="skill-icon">▣</div><h3>Data & tools</h3><p>Efficient workflows from schema to shipping.</p><ul><li>SQL Server & MySQL</li><li>Git & Azure DevOps</li><li>Postman</li><li>Visual Studio</li><li>VS Code</li></ul></article>
+      </div>
+    </div></section>
+
+    <section class="section projects" id="projects"><div class="container"><div class="projects-top reveal"><div class="section-heading"><p class="eyebrow">03 / Selected work</p><h2>Featured<br><em>projects.</em></h2></div><div class="filters" role="group" aria-label="Filter projects"><button class="selected" data-filter="all">All work</button><button data-filter="web">Web platforms</button><button data-filter="business">Business solutions</button></div></div>
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="web"><a class="project-visual visual-toduu" href="https://toduu.de/" target="_blank" rel="noreferrer" aria-label="Visit Toduu"><div class="browser"><div></div><div></div><div></div></div><div class="todo-ui"><aside><b>toduu.</b><i></i><i></i><i></i></aside><main><small>Good morning, Arjun</small><h4>Today's focus</h4><div class="task done">Design system review <b>✓</b></div><div class="task">Launch planning <b>→</b></div><div class="task">Team sync <b>→</b></div></main></div><span class="visit">View live site ↗</span></a><div class="project-info"><div><p>Web platform / 01</p><h3>Toduu</h3></div><p class="project-description">A focused task management platform designed to bring clarity to busy teams.</p><div class="project-bottom"><div class="tags"><span>Productivity</span><span>Web App</span></div><a href="https://toduu.de/" target="_blank" rel="noreferrer" aria-label="Open Toduu">↗</a></div></div></article>
+        <article class="project-card reveal" data-category="web"><a class="project-visual visual-hotel" href="https://hotelapartments.com/" target="_blank" rel="noreferrer" aria-label="Visit Hotel Apartments"><div class="hotel-overlay"><p>Hotel Apartments</p><h4>More than<br>a stay.</h4><span>Explore residences →</span></div><span class="visit">View live site ↗</span></a><div class="project-info"><div><p>Booking platform / 02</p><h3>Hotel Apartments</h3></div><p class="project-description">A luxury digital booking experience for distinctive hotel apartment stays.</p><div class="project-bottom"><div class="tags"><span>Hospitality</span><span>Booking</span></div><a href="https://hotelapartments.com/" target="_blank" rel="noreferrer" aria-label="Open Hotel Apartments">↗</a></div></div></article>
+        <article class="project-card reveal" data-category="business"><a class="project-visual visual-prioxis" href="https://www.prioxis.com/" target="_blank" rel="noreferrer" aria-label="Visit Prioxis"><div class="prio-brand"><b>PRIOXIS</b><p>Technology that<br>moves business.</p><div><i></i><i></i><i></i></div></div><span class="visit">View live site ↗</span></a><div class="project-info"><div><p>Business solutions / 03</p><h3>Prioxis</h3></div><p class="project-description">A technology solutions website built to communicate capability and confidence.</p><div class="project-bottom"><div class="tags"><span>Technology</span><span>Strategy</span></div><a href="https://www.prioxis.com/" target="_blank" rel="noreferrer" aria-label="Open Prioxis">↗</a></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="section services" id="services"><div class="container"><div class="section-heading reveal"><p class="eyebrow">04 / How I can help</p><h2>From an idea to<br><em>an advantage.</em></h2></div><div class="service-list">
+      <article class="service reveal"><span>01</span><h3>Enterprise Web Applications</h3><p>Secure, maintainable systems that support how your business operates.</p><i>↗</i></article>
+      <article class="service reveal"><span>02</span><h3>REST API Development</h3><p>Well-documented APIs that keep your products and services connected.</p><i>↗</i></article>
+      <article class="service reveal"><span>03</span><h3>Admin Dashboards</h3><p>Clear, efficient control centres that turn data into action.</p><i>↗</i></article>
+      <article class="service reveal"><span>04</span><h3>Angular Development</h3><p>Fast, polished interfaces that make sophisticated workflows feel simple.</p><i>↗</i></article>
+      <article class="service reveal"><span>05</span><h3>Database Design & Optimization</h3><p>Data structures engineered for performance, reliability, and growth.</p><i>↗</i></article>
+      <article class="service reveal"><span>06</span><h3>Bug Fixing & Performance</h3><p>Targeted improvements that make existing applications faster and stronger.</p><i>↗</i></article>
+    </div></div></section>
+
+    <section class="metrics"><div class="container metrics-grid"><div class="metric reveal"><strong data-count="3">0</strong><span>Enterprise projects</span></div><div class="metric reveal"><strong data-count="2">0</strong><span>Years experience</span></div><div class="metric reveal"><strong data-count="20">0</strong><span>APIs built</span></div><div class="metric reveal"><strong data-count="100">0</strong><span>Responsive websites</span></div></div></section>
+
+    <section class="section contact" id="contact"><div class="container contact-grid"><div class="contact-copy reveal"><p class="eyebrow">05 / Get in touch</p><h2>Have a project<br>in <em>mind?</em></h2><p>Whether you need a complete platform or a thoughtful upgrade, I'd love to hear what you're working on.</p><a class="email-link" href="mailto:arjunbhatt26@gmail.com">arjunbhatt26@gmail.com <span>↗</span></a><div class="socials"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a><a href="tel:+919000000000">+91 90000 00000</a><span>India</span></div></div>
+      <form class="contact-form reveal" action="mailto:arjunbhatt26@gmail.com" method="post" enctype="text/plain"><label>Your name<input name="name" required autocomplete="name" placeholder="Jane Smith"></label><label>Email address<input name="email" type="email" required autocomplete="email" placeholder="jane@company.com"></label><label>Tell me about your project<textarea name="message" required rows="4" placeholder="A few details about what you'd like to build..."></textarea></label><button class="button primary" type="submit">Send message <span>→</span></button></form>
+    </div></section>
+  </main>
+  <footer><div class="container"><a class="brand" href="#home"><span>AB</span> Arjun Bhatt</a><p>© <span id="year"></span> Arjun Bhatt. Built with care.</p><a href="#top">Back to top ↑</a></div></footer>
+  <button class="back-top" aria-label="Back to top">↑</button>
+  <script src="js/portfolio-premium.js"></script>
 </body>
-
-<!-- Mirrored from lmpixels.com/demo/leven-html-new/dark/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Oct 2021 14:36:27 GMT -->
 </html>
