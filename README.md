@@ -1,8 +1,5 @@
 # Arjun's Dev Canvas
 
-Lovable.dev Prompt — Arjun Bhatt Portfolio
-Copy everything below the line into Lovable.dev as your first message.
-
 Build a single-page scroll portfolio website for a full-stack software engineer. Style: creative/personal-brand — unique layout choices, subtle illustrations or custom graphic elements, but the underlying structure must stay clean and scannable (this site needs to work for HR recruiters skimming in 30 seconds AND for freelance clients evaluating technical credibility — don't let "creative" mean "confusing"). Pick a cohesive color palette and typography system that feels modern and intentional, not a generic template. Include a dark/light aesthetic decision of your own — commit to one primary mode designed well rather than a half-baked toggle, unless a toggle can be done cleanly.
 Sections (in order)
 Hero
@@ -42,7 +39,6 @@ Contact
 
 
 Email: arjunbhatt97@gmail.com
-Phone: +91-97270-60697
 Location: Ahmedabad, Gujarat, India
 LinkedIn: Bhatt-Atrjun (https://in.linkedin.com/in/bhatt-arjun)
 Portfolio site: bhattarjun.github.io (https://bhattarjun.github.io/)
@@ -56,25 +52,4 @@ SEO basics: page title, meta description, Open Graph tags for link sharing
 Explicit instruction to the AI
 Do not fabricate project outcomes, metrics, or client names. Where I haven't given you a number or result, leave a clearly marked placeholder instead of inventing one.
 
-Before you paste this: upload your photo as the first attachment in Lovable so it can reference "the uploaded headshot." And seriously — go back and get real numbers/outcomes for at least your top 3-4 projects before you fill in those placeholder fields. That's what actually separates you from every other .NET/React developer with a portfolio, not the color palette.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/e9d9b822-5f0f-4c06-a130-f28deaf9341c).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+Before you paste this: upload your photo as the first attachment in so it can reference "the uploaded headshot." And seriously — go back and get real numbers/outcomes for at least your top 3-4 projects before you fill in those placeholder fields. That's what actually separates you from every other .NET/React developer with a portfolio, not the color palette.
